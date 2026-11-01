@@ -26,7 +26,7 @@
 <body>
 <main>
   <h1>Pause privacy policy</h1>
-  <p class="meta">App: Pause: Mindful Scroll Blocker (com.sreeharim.pause) · Developer: Sreehari M · Effective 24 October 2026</p>
+  <p class="meta">App: Pause: Mindful Scroll Blocker (com.sreeharim.pause) · Developer: Sreehari M · Updated 1 November 2026</p>
 
   <div class="card">
     <strong>In short:</strong> Pause does not collect, store on any server, sell or share any of your data. It has no internet access. Everything it keeps stays on your phone.
@@ -35,15 +35,14 @@
   <h2>What Pause does</h2>
   <p>Pause shows a short countdown before an app you've chosen (for example a social media app) opens, so you can decide whether you really want to open it.</p>
 
-  <h2>Accessibility service</h2>
-  <p>To know when one of your chosen apps opens, Pause uses Android's Accessibility service. It is used only for this purpose:</p>
+  <h2>Permissions</h2>
+  <p>Pause asks for two Android permissions, and uses them only for its countdown:</p>
   <ul>
-    <li>Pause reads only the package name of the app that comes to the front of the screen (for example <code>com.instagram.android</code>).</li>
-    <li>Pause does not read the content of any screen, window or app, and does not read your messages, passwords or anything you type.</li>
-    <li>Pause does not perform actions in other apps on your behalf.</li>
-    <li>This information is used immediately on your device to decide whether to show the countdown and is not sent anywhere.</li>
+    <li><strong>Usage access</strong>: to know which app is in front, so Pause can tell when you open an app you chose. Pause reads only the package name of that app (for example <code>com.instagram.android</code>), never the content of any app, your messages or anything you type. It does not keep a history of the apps you use.</li>
+    <li><strong>Display over other apps</strong>: to show the countdown on top of the app you opened.</li>
   </ul>
-  <p>You are asked to agree to this before Pause sends you to Android's Accessibility settings, and you can turn the service off at any time in Settings → Accessibility.</p>
+  <p>While it is on, Pause runs a small background service, shown by Android as a "Pause is on" notification. You are shown what each permission is for before you grant it, and you can turn either one off at any time in Android's Settings.</p>
+  <p>Earlier versions (1.0.x) used Android's Accessibility service for the same purpose, reading only the name of the app on screen. Version 1.1.0 and later no longer use it.</p>
 
   <h2>Data stored on your phone</h2>
   <p>Pause saves the following only in its private storage on your device:</p>
